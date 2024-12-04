@@ -24,9 +24,8 @@ Testes unitários estão separados por questão
 npm run test
 ```
 
-### Testar uma questão
+### Testar uma questão específica
 ```ps1
-cd .\Tests\
 # npm run test -- <NUMERO DA QUESTÃO>
 npm run test -- 8 # Testes da questão 8
 ```
