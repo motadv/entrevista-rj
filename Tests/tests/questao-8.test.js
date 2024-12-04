@@ -66,7 +66,7 @@ test("Testa enviar um método diferente de POST", async () => {
         }
     });
 
-    // Comportamento padrão do express é retornar 404 para métodos não imnplementados
+    // Comportamento padrão do express é retornar 404 ao invés de 405 para métodos não imnplementados
     expect(response.status).toBe(404);
 });
 
