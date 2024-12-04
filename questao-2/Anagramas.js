@@ -27,7 +27,7 @@ function areAnagrams(str1, str2) {
         freq2[str2[i]] = (freq2[str2[i]] || 0) + 1;
     }
 
-    // Comparando dicionarios
+    // Comparando dicionarios por par chave-valor
     // O(n)
     for (let key in freq1) {
         if (freq1[key] !== freq2[key]) {

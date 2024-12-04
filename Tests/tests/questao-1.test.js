@@ -40,6 +40,7 @@ describe("Testes da questão 1", () => {
     queue.enqueue("10");
     queue.enqueue(20);
 
-    expect(queue.peek()).toBe("10");
+    expect(queue.dequeue()).toBe("10");
+    expect(queue.dequeue()).toBe(20);
   });
 });

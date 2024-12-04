@@ -13,7 +13,7 @@ function hasPairWithSum(arr, sum) {
     throw new Error("O segundo argumento deve ser um número")
   }
 
-  // Ordena a lista de numeros de forma crescente
+  // Ordena a lista de numeros crescentemente
   const sortedArr = arr.sort();
 
   // Índice começando dos menores elementos
