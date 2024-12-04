@@ -1,18 +1,26 @@
 # Teste de programação para entrevista de emprego
 Todas as questões estão implementadas como módulos em seus respectivos diretórios.
-Para executá-las importe para um arquivo separado ou execute todas pelo arquivo main.js
+
+## Setup e Instalação
+- Clone o repositório github
+- Instale as dependências com npm install
 
 ## Execução
+### Todas as questões
 ```ps1
-node main.js
+npm run execute
+```
+
+### Inicialização do servidor Express (Questão 8)
+```ps1
+npm run server
 ```
 
 ## Testes
-Testes unitários realizados em um projeto separado, um arquivo de teste para cada questão.
+Testes unitários estão separados por questão
 
 Para realizar todos os testes:
 ```ps1
-cd .\Tests\
 npm run test
 ```
 
