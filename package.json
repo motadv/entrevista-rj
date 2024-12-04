@@ -1,0 +1,26 @@
+{
+  "name": "entrevista-rj",
+  "version": "1.0.0",
+  "description": "Todas as questões estão implementadas como módulos em seus respectivos diretórios.\r Para executá-las importe para um arquivo separado ou execute todas pelo arquivo main.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "execute": "node main.js",
+    "server": "cd ./questao-8 && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motadv/entrevista-rj.git"
+  },
+  "author": "motadv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motadv/entrevista-rj/issues"
+  },
+  "homepage": "https://github.com/motadv/entrevista-rj#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "jest": "^29.7.0"
+  }
+}

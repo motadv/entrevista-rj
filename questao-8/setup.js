@@ -6,8 +6,6 @@ const app = express();
 app.use(bodyParser.json())
 
 app.use((err, req, res, next) => {
-    console.error(err);
-
     if(err.status === 400) {
         return res.status(400).json({ error: "O corpo da requisição deve ser um JSON válido." });
     }
@@ -43,7 +41,7 @@ const anagramHandler = (req, res) => {
     }
     
     // Caso de uso da rota
-    const areAnagrams = require("./modules/Anagramas");    
+    const areAnagrams = require("../questao-2/Anagramas");    
     const anagramResult = areAnagrams(req.body.str1, req.body.str2);
 
     // Retorno da resposta

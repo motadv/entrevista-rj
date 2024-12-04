@@ -124,7 +124,7 @@ describe("Testes da questão 8", () => {
     expect(response2.status).toBe(400);
   });
 
-  test("Testa enviar uma requisição com o corpo não sendo um JSON válido", async () => {
+  test("Erro em requisição com o corpo não sendo um JSON válido", async () => {
     const response = await fetch("http://localhost:3000/anagrams", {
       method: "POST",
       headers: {
