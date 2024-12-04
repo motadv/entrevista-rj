@@ -37,4 +37,10 @@ describe("Testes da questão 6", () => {
         expect(() => hasPairWithSum(["a", "b", "c", "d"], 2)).toThrow('O vetor deve conter apenas números');
     });
 
+    test("Testa se o vetor original não foi alterado", () => {
+        const arr = [1, 2, 3, 4];
+        hasPairWithSum(arr, 6);
+        expect(arr).toStrictEqual([1, 2, 3, 4]);
+    });
+
 });

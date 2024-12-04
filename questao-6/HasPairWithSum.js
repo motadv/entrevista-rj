@@ -14,7 +14,7 @@ function hasPairWithSum(arr, sum) {
   }
 
   // Ordena a lista de numeros de forma crescente
-  const sortedArr = arr.toSorted();
+  const sortedArr = arr.sort();
 
   // Índice começando dos menores elementos
   let left = 0;
