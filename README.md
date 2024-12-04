@@ -19,12 +19,12 @@ npm run server
 ## Testes
 Testes unitários estão separados por questão
 
-Para realizar todos os testes:
+### Testar todo o projeto
 ```ps1
 npm run test
 ```
 
-Para realizar os testes de apenas uma questão:
+### Testar uma questão
 ```ps1
 cd .\Tests\
 # npm run test -- <NUMERO DA QUESTÃO>
