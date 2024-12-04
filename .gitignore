@@ -1,0 +1,2 @@
+# Ignore all node_modules fodlers in the project
+**/node_modules/
