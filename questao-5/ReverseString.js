@@ -12,6 +12,10 @@ function reverseString(str) {
   }
 
   return reversed;
+
+  //Outra alternativa seria usar o método reverse() de arrays
+  //return str.split("").reverse().join("");
+  //Separa cara caracter em um array, inverte a ordem e junta de volta em uma string
 }
 
 module.exports = reverseString;

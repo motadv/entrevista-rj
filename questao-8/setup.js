@@ -5,9 +5,24 @@ const app = express();
 
 app.use(bodyParser.json())
 
+app.use((err, req, res, next) => {
+    console.error(err);
+
+    if(err.status === 400) {
+        return res.status(400).json({ error: "O corpo da requisição deve ser um JSON válido." });
+    }
+
+    return next(err);
+});
+
 const hasBody = (req, res, next) => {
-    if (!req.body) {
-        return res.status(400).json({ error: "Não foi possível encontrar o corpo da requisição" });
+    try{
+        if (!req.body) {
+            return res.status(400).json({ error: "Não foi possível encontrar o corpo da requisição" });
+        }
+    }
+    catch (err) {
+        return res.status(400).json({error: "O corpo da requisição deve ser um JSON válido." })
     }
     next();
 }

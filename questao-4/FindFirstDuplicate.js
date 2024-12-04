@@ -5,8 +5,8 @@ function findFirstDuplicate(arr) {
         throw new Error("O argumento deve ser um vetor");
     }
 
-    if (!arr.every((element) => typeof element === 'number')) {
-        throw new Error("O vetor deve conter apenas números");
+    if (!arr.every((element) => typeof element === 'number' && Number.isInteger(element))) {
+        throw new Error("O vetor deve conter apenas números inteiros");
     }
 
     // O Set só armazena valores únicos e é implementado com hash table

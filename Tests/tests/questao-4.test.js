@@ -29,8 +29,9 @@ describe("Testes da questão 4", () => {
         expect(() => findFirstDuplicate("a")).toThrow('O argumento deve ser um vetor');
     });
 
-    test("Testa quando o vetor possui um elemento que não é um número", () => {
-        expect(() => findFirstDuplicate([1, 2, "a"])).toThrow('O vetor deve conter apenas números');
+    test("Testa quando o vetor possui um elemento que não é um número inteiro", () => {
+        expect(() => findFirstDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, "a"])).toThrow('O vetor deve conter apenas números');
+        expect(() => findFirstDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 1.5])).toThrow('O vetor deve conter apenas números inteiros');
     });
 });
     
