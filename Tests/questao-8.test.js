@@ -1,4 +1,4 @@
-const app = require("../../questao-8/setup");
+const app = require("../questao-8/setup");
 const port = 3000;
 
 let server;

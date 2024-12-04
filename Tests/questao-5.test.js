@@ -1,4 +1,4 @@
-const reverseString = require("../../questao-5/ReverseString");
+const reverseString = require("../questao-5/ReverseString");
 
 describe("Testes da questão 5", () => {
 

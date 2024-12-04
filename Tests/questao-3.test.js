@@ -1,4 +1,4 @@
-const binarySearch = require("../../questao-3/BuscaBinaria");
+const binarySearch = require("../questao-3/BuscaBinaria");
 
 describe("Testes da questão 3", () => {
   test("Teste de de busca binária com valor presente", () => {

@@ -1,4 +1,4 @@
-const hasPairWithSum = require("../../questao-6/HasPairWithSum")
+const hasPairWithSum = require("../questao-6/HasPairWithSum")
 
 describe("Testes da questão 6", () => {
     test("Testa um vetor com um par que soma 8", () => {

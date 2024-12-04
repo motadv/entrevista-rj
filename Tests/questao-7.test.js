@@ -1,4 +1,4 @@
-const isPalindrome = require("../../questao-7/IsPalindrome");
+const isPalindrome = require("../questao-7/IsPalindrome");
 
 describe("Testes da questão 7", () => {
     test("Testa uma string palíndroma", () => {

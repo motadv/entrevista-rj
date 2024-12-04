@@ -1,4 +1,4 @@
-const findFirstDuplicate = require("../../questao-4/FindFirstDuplicate");
+const findFirstDuplicate = require("../questao-4/FindFirstDuplicate");
 
 describe("Testes da questão 4", () => {
     test("Testa um vetor com um duplicado", () => {

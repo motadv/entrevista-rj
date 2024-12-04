@@ -1,4 +1,4 @@
-const queueClass = require("../../questao-1/Queue");
+const queueClass = require("../questao-1/Queue");
 
 describe("Testes da questão 1", () => {
   test("Teste de enfileiramento", () => {

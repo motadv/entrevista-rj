@@ -1,4 +1,4 @@
-const areAnagrams = require("../../questao-2/Anagramas");
+const areAnagrams = require("../questao-2/Anagramas");
 
 describe("Testes da questão 2", () => {
   test("Testa um anagrama", () => {
